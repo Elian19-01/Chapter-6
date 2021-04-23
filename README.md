@@ -79,5 +79,33 @@ int main() {
 
 
 ```
+###Exercise 6-5: A leap year is any year divisible by 4, unless the year is divisible by
+100, but not 400. Write a program to tell if a year is a leap year.
+
+
+```c
+#include <stdio.h>
+int main() {
+   int year;
+   printf("Enter a year: ");
+   scanf("%d", &year);
+
+  
+   if (year % 400 == 0) {
+      printf("%d is a leap year.", year);
+   }
+   else if (year % 100 == 0) {
+      printf("%d is not a leap year.", year);
+   }
+   
+   else if (year % 4 == 0) {
+      printf("%d is a leap year.", year);
+   }
+  
+   return 0;
+}
+
+```
+
 
 
